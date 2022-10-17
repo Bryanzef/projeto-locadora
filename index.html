@@ -1,0 +1,302 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora</title>
+
+    <!-- arquivo CSS próprio-->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+	<!-- Java Script -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</head>
+<body>
+       
+  <!-- Menu Navbar-->
+	<nav class="navbar navbar-expand-lg bg-danger">
+		<div class="container-fluid">
+			
+			<!-- Imagem e Título -->
+			<img style="width:3%;" src="./pipoca.png">
+			<a class="navbar-brand" href="#topo">Locadora 2000</a>
+			<!-- Div com itens clicáveis -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item" id="ItensClick" >
+						<a class="nav-link active" href="#tabfilmes" >Filmes Disponíveis</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#drop" id="dropGeneros" role="button" data-bs-toggle="dropdown" > Filmes por Categoria </a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#gAcao">Ação		</a></li>
+							<li><a class="dropdown-item" href="#gAnim">Animação	</a></li>
+							<li><a class="dropdown-item" href="#gcomédia">Comédia	</a></li>
+							<li><a class="dropdown-item" href="#gterror">	Terror</a></li>
+              <li><a class="dropdown-item" href="#gsuspense">	Suspense</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#CADFIMES">Cadastrar Filme</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+
+
+	<!-- Tabela filmes disponíveis -->
+	<div class="container">
+		
+
+            
+              <br>
+              <br>
+              <br>
+              
+<!--Tabela responsiva bootstrap-->
+            <div class="table-responsive-lg table-bordered">
+              <table class="table">
+                <tbody>
+  <!--Informaçoes dos filmes para colocar-->
+  <tr>
+    <th cope="col">Código </th>
+    <th cope="col">Título </th>
+    <th cope="col" >Diretor </th>
+    <th cope="col">Lançamento </th>
+    <th cope="col"> Genero </th>
+    
+</tr>
+
+                    </tbody>
+                    <tbody>
+                        <!-- Linha expandida com gênero do filme / deixei como uma barra preta por questoes visuais-->
+                        <tr id="tabfilmes">
+                            <th  class="table-dark" colspan="5" id="gAcao"></th>
+                        </tr>
+                        <!-- Primeiro filme  class="text-center "-->
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Príncipe da Pérsia: As Areias do Tempo</td>
+                            <td>Mike Newell</td>
+                            <td>3 de junho de 2010</td>
+                            <td>Ação</td>
+                        </tr>
+                        <!-- Segundo filme -->
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Lobisomem na Noite</td>
+                    <td>Michael Giacchino (Dir.)</td>
+                    <td>2022</td>
+                   <td>Ação</td>
+                </tr>
+                    <!-- Terceiro filme -->
+                <tr>
+                    <th scope="row">3</th>
+                    <td>13º Distrito</td>
+                    <td>Camille Delamarre </td>
+                    <td>2014</td>
+                     <td>Ação</td> 
+                </tr>
+                <tr>
+                    <th class=" table-dark" colspan="5" id="gAnim"></th>
+                </tr>
+                    <!-- Quarto Filme filme  text-center-->
+                  <tr>
+                    <th scope="row">4</th>
+                  <td>O Rei Leão</td>
+                  <td> Roger Allers, Rob Minkofftor</td>
+                  <td>2011</td>
+                 <td>Animação</td> 
+              </tr>
+                <!--- Quinto filme -->
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Monstros S.A</td>
+                    <td> Pete Docter, David Silverman, Lee Unkrich</td>
+                    <td>2013</td>
+                  <td>Animação</td>
+                </tr> 
+                <!-- Sexto filme -->
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Procurando Nemo</td>
+                    <td>Andrew Stanton, Lee Unkrich</td>
+                    <td>2012</td>
+                  <td>Animação</td> 
+                </tr>
+                    </tbody>
+                    <th class="table-dark" colspan="5" id="gcomédia"></th>
+                </tr>
+                    <!-- Quarto Filme filme text-center  -->
+                  <tr>
+                    <th scope="row">4</th>
+                  <td>O Peso do Talento </td>
+                  <td>Tom Gormican</td>
+                  <td>2022</td>
+                <td>Comédia</td> 
+              </tr>
+                <!--- Quinto filme -->
+                <tr>
+                    <th scope="row">5</th>
+                    <td> O Homem de Toronto</td>
+                    <td>Patrick Hughes</td>
+                    <td>2022</td>
+                  <td> Comédia</td>  
+                </tr> 
+                <!-- Sexto filme -->
+                <tr>
+                    <th scope="row">6</th>
+                    <td>De Férias da Família </td>
+                    <td>Diretor</td>
+                    <td>2022</td>
+                   <td>Comédia</td>
+                </tr>
+                    </tbody>
+                    <th class=" table-dark" colspan="5" id="gterror"></th>
+                </tr>
+                    <!-- Quarto Filme filme  text-center-->
+                  <tr>
+                    <th scope="row">4</th>
+                  <td>O Telefone Preto</td>
+                  <td>Scott Derrickson</td>
+                  <td>2021</td>
+              <td>Terror</td> 
+              </tr>
+                <!--- Quinto filme -->
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Pânico na Floresta</td>
+                    <td>Rob Schmidt</td>
+                    <td>2003</td>
+                 <td>Terror</td>
+                </tr> 
+                <!-- Sexto filme -->
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Madrugada dos Mortos</td>
+                    <td>Zacy Snyder</td>
+                    <td>2004</td>
+                 <td> Terror</td>
+                </tr>
+                    </tbody>
+                  <th class=" table-dark" colspan="5" id="gsuspense"></th>
+                </tr>
+                    <!-- Quarto Filme filme text-center -->
+                  <tr>
+                    <th scope="row">4</th>
+                  <td>Bird Box</td>
+                  <td>Susanne Bier</td>
+                  <td>2018</td>
+             <td>suspense</td>
+              </tr>
+                <!--- Quinto filme -->
+                <tr>
+                    <th scope="row">5</th>
+                   <td> Não! Não Olhe!</td>
+                    <td>Jordan Peele</td>
+                    <td>2022</td>
+                  <td>suspense</td> 
+                </tr> 
+                <!-- Sexto filme -->
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Título</td>
+                    <td>Damien Power</td>
+                    <td>2022 </td>
+               <td>suspense </td>
+                </tr>
+                    </tbody>
+                </table>
+              </div>
+          
+          <hr class="border-primary border-3 opacity-75">
+	
+
+	<h2 class="text-center mb-5" id="CADFIMES">Cadastro de Filmes</h2>
+
+	<div class="container mb-5">
+		<form>
+			<!-- Linha código e data lançamento -->
+			<div class="row">
+				<!-- código -->
+				<div class="mb-3 col">
+					<label for="codFilme" class="form-label">Código: </label>
+					<input type="text" id="codFilme" class="form-control" placeholder="00">
+				</div>
+				<!-- data lançamento -->
+				<div class="mb-3 col">
+					<label for="anoFilme" class="form-label">Ano: </label>
+					<input type="date" id="anoFilme" class="form-control">
+				</div>
+			</div>
+
+			<!-- linha do título e diretor -->
+			<div class="row">
+				<!-- titulo -->
+				<div class="mb-3 col">
+					<label for="titFilme" class="form-label">Título: </label>
+					<input type="text" id="titFilme" class="form-control">
+				</div>
+				<!-- diretor -->
+				<div class="mb-3 col">
+					<label for="dirFilme" class="form-label">Diretor: </label>
+					<input type="text" id="dirFilme" class="form-control">
+				</div>
+			</div>
+
+			<!-- linha Gêneros -->
+			<div class="row">
+				<div class="mb-3 col form-check">
+					<input type="radio" name="radio" id="radGenAcao" class="form-check-input" value="acao">
+					<label for="radGenAcao" class="form-label">Ação</label>
+				</div>
+				<div class="mb-3 col form-check">
+					<input type="radio" name="radio" id="radGenAnim" class="form-check-input" value="anim">
+					<label for="radGenAnim" class="form-label">Animação</label>
+				</div>
+				<div class="mb-3 col form-check">
+					<input type="radio" name="radio" id="radGencomédia" class="form-check-input" value="rom">
+					<label for="radGenRom" class="form-label">Comédia</label>
+				</div>
+				<div class="mb-3 col form-check">
+					<input type="radio" name="radio" id="radGenterror" class="form-check-input" value="sus">
+					<label for="radGenSus" class="form-label">Terror</label>
+				</div>
+        <div class="mb-3 col form-check">
+					<input type="radio" name="radio" id="radGenSuspense" class="form-check-input" value="sus">
+					<label for="radGenSus" class="form-label">Suspense</label>
+				</div>
+			</div>
+			<!-- fim da linha generos -->
+
+			<!-- Botão Enviar -->
+			<div class="col-auto">
+				<button type="submit" class="btn btn-secondary mb-3">Cadastrar</button>
+			</div>
+
+		</form>
+		<!-- fim do form -->
+	</div>
+  <style>
+    .table-responsive {
+        font-size: small;
+    }
+
+  .nav-link:hover {
+      color: lightskyblue;
+      transition: 0.5s;
+    }
+    body {
+      background-color: rgb(219, 219, 219);
+    }
+  </style>
+         
+</body>
+</html>
